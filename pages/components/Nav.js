@@ -1,17 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import logo from '/home/kurt/code/repos/port-site/public/assets/default.png'
 
 function Nav() {
   return (
     <div className='fixed w-full h-20 shadow-xl'>
       <div className='flex items-center justify-between w-full h-full px-10 2xl:px-16'>
-        <Image
-          src='/./public/assets/default.png'
-          alt='logo'
-          width='135'
-          height='100'
-        />
+        <Image src={logo} alt='logo' width='135' height='100' />
         <div>
           <ul className='hidden md:flex'>
             <Link href='/'>

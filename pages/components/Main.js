@@ -18,7 +18,7 @@ function Main() {
             </p>
             <div className='flex items-center justify-between max-w-[330px] m-auto p-2'>
               <div className='p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-125'>
-                <a href='https://www.linkedin.com/in/kurtmalley/'>
+                <a href='https://www.linkedin.com/in/kurt-malley/'>
                   <FaLinkedinIn />
                 </a>
               </div>
