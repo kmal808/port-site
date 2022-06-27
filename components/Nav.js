@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import logo from '/home/kurt/code/repos/port-site/public/assets/default.png'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 function Nav() {
+  const [nav, setNav] = useState(false)
+
+  const handleNav = () => {
+    setNav(!nav)
+  }
+
   return (
     <div className='fixed w-full h-20 shadow-xl z-[100]'>
       <div className='flex items-center justify-between w-full h-full px-10 2xl:px-16'>
@@ -35,18 +40,31 @@ function Nav() {
               </li>
             </Link>
           </ul>
-          <div className='md:hidden'>
+          <div onClick={handleNav} className='md:hidden'>
             <AiOutlineMenu size={25} />
           </div>
         </div>
       </div>
 
-      <div className='fixed left-0 top-0 w-full h-screen bg-black/70'>
-        <div className='fixed left-0 top-0 w-[75%] sm:w-[60%] md:[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'>
+      <div
+        className={
+          nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
+        }
+      >
+        <div
+          className={
+            nav
+              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+          }
+        >
           <div>
             <div className='flex w-full items-center justify-between'>
               <Image src={logo} width='100' height='100' alt='logo' />
-              <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+              <div
+                onClick={handleNav}
+                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+              >
                 <AiOutlineClose />
               </div>
             </div>
@@ -79,23 +97,19 @@ function Nav() {
                 Let's Connect
               </p>
               <div className='flex items-center justify-between my-4  w-full sm:w-[80%]'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <FaLinkedinIn />
                 </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <FaGithub />
                 </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <AiOutlineMail />
                 </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75'>
-                  <BsFillPersonLinesFill />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75'>
-                  <FaLinkedinIn />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75'>
-                  <FaLinkedinIn />
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <a href='https://twitter.com/kmal808'>
+                    <FaTwitter />
+                  </a>
                 </div>
               </div>
             </div>
