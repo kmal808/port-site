@@ -8,12 +8,12 @@ function About() {
     <div id='about' className='flex items-center w-full p-2 py-16 md:h-screen'>
       <div className='max-w[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
-          <h2 className='py-10 tracking-widest text-teal-700 uppercase'>
+          <h2 className='py-10 text-xl tracking-widest text-teal-700 uppercase'>
             About
           </h2>
           <p className='py-1'>Add paragraph here</p>
           <h4 className='pt-4 animate-pulse'>Experience</h4>
-          <p className='py-1'>Add experience here</p>
+          <p className='py-1'>Add experience here==</p>
           <Link href='/#projects'>
             <p className='py-10 underline cursor-pointer'>
               Check out some of my projects...
@@ -22,7 +22,7 @@ function About() {
         </div>
         <div>
           <Image
-            className='duration-200 ease-in rounded-full'
+            className='hover:scale-105 ease-in duration-200 rounded-full'
             src={profile}
             alt='me'
             width={400}

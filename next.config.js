@@ -20,6 +20,7 @@ module.exports = {
       'banner2.cleanpng.com',
       'img.icons8.com',
       'mpng.subpng.com',
+      'img1.pnghut.com',
     ],
   },
 }
