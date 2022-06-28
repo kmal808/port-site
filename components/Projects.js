@@ -5,7 +5,7 @@ function Projects() {
     <div className='w-full'>
       <div className='m-w-[1240px] mx-auto px-2 py-16'>
         <p className='text-xl tracking-widest uppercase text-teal-500'>
-          /Projects
+          Projects
         </p>
         <h2 className='py-4'>What I've Built</h2>
         <div className='grid md:grid-col-2 gap-8'>
