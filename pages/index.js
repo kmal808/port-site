@@ -3,6 +3,7 @@ import Main from '../components/Main'
 import About from '../components/About'
 import Skills from '../components/Skills'
 import Head from 'next/head'
+import Projects from '../components/Projects'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Main />
       <About />
       <Skills />
+      <Projects />
     </>
   )
 }
