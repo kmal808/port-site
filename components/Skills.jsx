@@ -11,7 +11,7 @@ function Skills() {
         <h2 className='py-4'>What I Can Do</h2>
 
         <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4 '>
-          <div className='p-5 hover:scale-105 duration-200 ease-in rounded-full shadow-xl'>
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid items-center justify-center grid-cols-2 gap-4'>
               <div className='m-auto'>
                 <Image
@@ -27,7 +27,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className='p-5 hover:scale-105 duration-200 ease-in rounded-full shadow-xl'>
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid items-center justify-center grid-cols-2 gap-4'>
               <div className='m-auto'>
                 <Image
@@ -43,23 +43,23 @@ function Skills() {
             </div>
           </div>
 
-          <div className='p-5 hover:scale-105 duration-200 ease-in rounded-full shadow-xl'>
-            <div className='grid items-center justify-center grid-cols-2 gap-4'>
+          <div className='p-5 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image
-                  src='https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/github1.png?raw=true'
+                  src='https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/javascript.png?raw=true'
                   width='64px'
                   height='64px'
-                  alt='github'
+                  alt='/'
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <h3>GitHub</h3>
+                <h3>JavaScript</h3>
               </div>
             </div>
           </div>
 
-          <div className='p-5 hover:scale-105 duration-200 ease-in rounded-full shadow-xl'>
+          <div className='p-5 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid items-center justify-center grid-cols-2 gap-4'>
               <div className='m-auto'>
                 <Image
@@ -75,7 +75,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className='p-5 hover:scale-105 duration-200 ease-in rounded-full shadow-xl'>
+          <div className='p-5 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid items-center justify-center grid-cols-2 gap-4'>
               <div className='m-auto'>
                 <Image
@@ -92,7 +92,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className='p-5 hover:scale-105 duration-200 ease-in rounded-full shadow-xl '>
+          <div className='p-5 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid items-center justify-center grid-cols-2 gap-4'>
               <div className='m-auto'>
                 <Image
@@ -108,23 +108,23 @@ function Skills() {
             </div>
           </div>
 
-          <div className='p-5 hover:scale-105 duration-200 ease-in rounded-full shadow-xl '>
+          <div className='p-5 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid items-center justify-center grid-cols-2 gap-4'>
               <div className='m-auto'>
                 <Image
-                  src='https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/mongo.png?raw=true'
-                  width='64'
-                  height='64'
+                  src='https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/github1.png?raw=true'
+                  width='64px'
+                  height='64px'
                   alt='github'
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <h3>MongoDB</h3>
+                <h3>GitHub</h3>
               </div>
             </div>
           </div>
 
-          <div className='p-5 hover:scale-105 duration-200 ease-in rounded-full shadow-xl '>
+          <div className='p-5 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid items-center justify-center grid-cols-2 gap-4'>
               <div className='m-auto'>
                 <Image
@@ -140,7 +140,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className='p-5 hover:scale-105 duration-200 ease-in rounded-full shadow-xl '>
+          <div className='p-5 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid items-center justify-center grid-cols-2 gap-4'>
               <div className='m-auto'>
                 <Image
@@ -156,7 +156,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className='p-5 hover:scale-105 duration-200 ease-in rounded-full shadow-xl '>
+          <div className='p-5 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid items-center justify-center grid-cols-2 gap-4'>
               <div className='m-auto'>
                 <Image

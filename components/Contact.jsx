@@ -1,13 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import AboutImg from '/home/kurt/code/repos/port-site/public/about-img.jpg'
+import AboutImg from '/home/kurt/code/repos/port-site/public/about-image.jpg'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
-import { BsFillPeronLinesFill } from 'react-icons/bs'
+import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 
 const Contact = () => {
+  const [name, setName] = useState('')
+  const [phone, setPhone] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+
+  const handleSubmit = () => {
+    setName('')
+    setPhone('')
+    setEmail('')
+    setSubject('')
+    setMessage('')
+  }
+
   return (
     <div className='w-full lg:h-screen'>
       <div className='max-w-[1240px] m-auto py-16 w-full'>
@@ -59,10 +73,10 @@ const Contact = () => {
                   <div>
                     <AiOutlineMail />
                   </div>
-                  <Link href='/resume' />
+                  {/* <Link href='/resume' /> */}
                   <a>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <BsFillPeronLinesFill />
+                      {/* <BsFillPersonLinesFill /> */}
                     </div>
                   </a>
                 </div>
@@ -143,7 +157,7 @@ const Contact = () => {
               <a>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                   <HiOutlineChevronDoubleUp
-                    classsName='text-teal-400'
+                    className='text-teal-400'
                     size={30}
                   />
                 </div>
