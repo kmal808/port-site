@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
@@ -7,13 +7,31 @@ import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 function Nav() {
   const [nav, setNav] = useState(false)
+  const [shadow, setShadow] = useState(false)
 
   const handleNav = () => {
     setNav(!nav)
   }
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true)
+      } else {
+        setShadow(false)
+      }
+    }
+    window.addEventListener('scroll', handleShadow)
+  }, [])
+
   return (
-    <div className='fixed w-full h-20 shadow-xl z-[100]'>
+    <div
+      className={
+        shadow
+          ? 'fixed w-full h-20 shadow-xl z-[100]'
+          : 'fixed w-full h-20 z-[100]'
+      }
+    >
       <div className='flex items-center justify-between w-full h-full px-10 2xl:px-16'>
         <Link href='/'>
           <a>
@@ -70,7 +88,9 @@ function Nav() {
         >
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Image src={logo} width='100' height='100' alt='logo' />
+              <Link href='/'>
+                <Image src={logo} width='100' height='100' alt='logo' />
+              </Link>
               <div
                 onClick={handleNav}
                 className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
@@ -87,19 +107,29 @@ function Nav() {
           <div>
             <ul className='py-4 flex flex-col'>
               <Link href='/'>
-                <li className='py-4 text-sm'>Home</li>
+                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                  Home
+                </li>
               </Link>
-              <Link href='/about'>
-                <li className='py-4 text-sm'>About</li>
+              <Link href='/#about'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                  About
+                </li>
               </Link>
-              <Link href='/skills'>
-                <li className='py-4 text-sm'>Skills</li>
+              <Link href='/#skills'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                  Skills
+                </li>
               </Link>
-              <Link href='/projects'>
-                <li className='py-4 text-sm'>Projects</li>
+              <Link href='/#projects'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                  Projects
+                </li>
               </Link>
-              <Link href='/contact'>
-                <li className='py-4 text-sm'>Contacct</li>
+              <Link href='/#contact'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                  Contacct
+                </li>
               </Link>
             </ul>
             <div className='pt-40'>

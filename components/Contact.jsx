@@ -23,8 +23,8 @@ const Contact = () => {
   }
 
   return (
-    <div className='w-full lg:h-screen'>
-      <div className='max-w-[1240px] m-auto py-16 w-full'>
+    <div id='contact' className='w-full lg:h-screen'>
+      <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
         <p className='text-xl tracking-widest uppercase text-teal-400'>
           Contact
         </p>
@@ -138,21 +138,25 @@ const Contact = () => {
                   <div className='flex flex-col py-2'>
                     <label className='uppercase text-sm py-2'>Message</label>
                     <textarea
-                      className='border-2 rounded-lg p-3 flex border-gray-300'
+                      className='border-2 rounded-lg p-3 border-gray-300 caret-teal-200'
                       rows='10'
                       name='message'
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
                   </div>
-                  <button className='w-full p-4 text-gray-100 mt-4'>
+                  <button
+                    type='submit'
+                    className='w-full p-4 text-gray-100 mt-4'
+                  >
                     Send Message
                   </button>
                 </div>
               </form>
             </div>
           </div>
-          <div>
+
+          <div className='flex justify-center py-12'>
             <Link href='/'>
               <a>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
