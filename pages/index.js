@@ -7,7 +7,7 @@ import Contact from '../components/Contact'
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Head>
         <title>Kurt | Full Stack Developer</title>
         <meta
@@ -21,6 +21,6 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
-    </>
+    </div>
   )
 }
