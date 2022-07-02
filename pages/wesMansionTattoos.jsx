@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import { RiRadioButtonFill } from 'react-icons/ri'
-import mernEcomImg from '../public/assets/projects/mern-ecom.gif'
+import wesMansionTattoosImg from '../public/assets/projects/wes-mansion-tattoos.gif'
 
-const mernEcom = () => {
+const wesMansionTattoos = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:w-[40vh] relative'>
@@ -12,12 +12,12 @@ const mernEcom = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={mernEcomImg}
+          src={wesMansionTattoosImg}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Mern Stack Ecommerce Store</h2>
-          <h3>React / Redux / Node / Express / MongoDB / Bootstrap</h3>
+          <h2 className='py-2'>Wes Mansion Tattoos</h2>
+          <h3>HTML / CSS</h3>
         </div>
       </div>
 
@@ -26,24 +26,17 @@ const mernEcom = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Ecommerce store built with React, Node, Express, and MongoDB.
-            Features include adding to cart, removing from cart, showing and
-            updating items qty in stock, admin dashboard, using local storage to
-            store cart items, user account creation, and much more. Redux is
-            used for state management, and styling is done via BootStrap CSS.
+            This is a portfolio website for a vintage black and gray tattoo
+            artist. It was built using HTML and CSS.
           </p>
           <a
-            href='https://github.com/kmal808/mern-ecom'
+            href='https://wesmansion.kurtmalley.com'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
           </a>
-          <a
-            href='https://github.com/kmal808/mern-ecom'
-            target='_blank'
-            rel='noreferrer'
-          >
+          <a href='https://github.com/kmal808' target='_blank' rel='noreferrer'>
             <button className='px-8 py-2 mt-4'>Code</button>
           </a>
         </div>
@@ -53,27 +46,11 @@ const mernEcom = () => {
             <div className='grid grid-cols-3 md:grid-cols-1'>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' />
-                React
+                HTML
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' />
-                Redux
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' />
-                Node
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' />
-                Express
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' />
-                MongoDB
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' />
-                BootStrap
+                CSS
               </p>
             </div>
           </div>
@@ -86,4 +63,4 @@ const mernEcom = () => {
   )
 }
 
-export default mernEcom
+export default wesMansionTattoos

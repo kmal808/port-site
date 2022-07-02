@@ -2,9 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import bankiImage from '../public/assets/projects/banki-node-app.gif'
-import mernEcom from '../public/assets/projects/mern-ecom.gif'
-import bigWaveTracker from '../public/assets/projects/big-wave-tracker.gif'
-import wesMansionTattoos from '../public/assets/projects/wes-mansion-tattoos.gif'
+import mernEcomImg from '../public/assets/projects/mern-ecom.gif'
+import bigWaveTrackerImg from '../public/assets/projects/big-wave-tracker.gif'
+import wesMansionTattoosImg from '../public/assets/projects/wes-mansion-tattoos.gif'
 import ProjectItem from './ProjectItem'
 
 function Projects() {
@@ -24,20 +24,20 @@ function Projects() {
           />
           <ProjectItem
             title='Mern Ecommerce'
-            backgroundImg={mernEcom}
-            projectUrl='/mern'
+            backgroundImg={mernEcomImg}
+            projectUrl='/mernEcom'
             tech='ReactJS, Express, MongoDB'
           />
           <ProjectItem
             title='Big Wave Tracker'
-            backgroundImg={bigWaveTracker}
-            projectUrl='/bigwave'
+            backgroundImg={bigWaveTrackerImg}
+            projectUrl='/bigWaveTracker'
             tech='HTML, CSS'
           />
           <ProjectItem
             title='Wes Mansion Tattos'
-            backgroundImg={wesMansionTattoos}
-            projectUrl='/tattoos'
+            backgroundImg={wesMansionTattoosImg}
+            projectUrl='/wesMansionTattoos'
             tech='HTML, CSS'
           />
         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { RiRadioButtonFill } from 'react-icons/ri'
-import bankiImg from '/home/kurt/code/repos/port-site/public/assets/projects/banki-node-app.gif'
+import bankiImage from '../public/assets/projects/banki-node-app.gif'
 
 const banki = () => {
   return (
@@ -12,7 +12,7 @@ const banki = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={bankiImg}
+          src={bankiImage}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { RiRadioButtonFill } from 'react-icons/ri'
-import bigWaveTracker from '/home/kurt/code/repos/port-site/public/assets/projects/big-wave-tracker.gif'
+import bigWaveTrackerImg from '../public/assets/projects/big-wave-tracker.gif'
 
 const bigWaveTracker = () => {
   return (
@@ -12,7 +12,7 @@ const bigWaveTracker = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={bigWaveTracker}
+          src={bigWaveTrackerImg}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
