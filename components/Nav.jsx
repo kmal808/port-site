@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import logo from '/home/kurt/code/repos/port-site/public/assets/default.png'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
-function Nav() {
+const Nav = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
 
@@ -52,12 +52,12 @@ function Nav() {
             <Link href='/#about'>
               <li className='ml-10 text-sm uppercase border-teal-200'>About</li>
             </Link>
-            <Link href='#/skills'>
+            <Link href='/#skills'>
               <li className='ml-10 text-sm uppercase border-teal-200'>
                 Skills
               </li>
             </Link>
-            <Link href='#/projects'>
+            <Link href='/#projects'>
               <li className='ml-10 text-sm uppercase border-teal-200'>
                 Projects
               </li>

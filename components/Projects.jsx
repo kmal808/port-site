@@ -7,7 +7,7 @@ import bigWaveTrackerImg from '../public/assets/projects/big-wave-tracker.gif'
 import wesMansionTattoosImg from '../public/assets/projects/wes-mansion-tattoos.gif'
 import ProjectItem from './ProjectItem'
 
-function Projects() {
+const Projects = () => {
   return (
     <div id='projects' className='w-full'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
@@ -17,16 +17,16 @@ function Projects() {
         <h2 className='py-4'>What I've Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
-            title='Technical Interview Prep'
+            title='Technical Interview Prep App'
             backgroundImg={bankiImage}
             projectUrl='/banki'
-            tech='VanillaJS, Express'
+            tech='JavaScript, Node, Express, RESTApi'
           />
           <ProjectItem
             title='Mern Ecommerce'
             backgroundImg={mernEcomImg}
             projectUrl='/mernEcom'
-            tech='ReactJS, Express, MongoDB'
+            tech='React, Redux, Node, Express, MongoDB'
           />
           <ProjectItem
             title='Big Wave Tracker'
