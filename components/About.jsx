@@ -13,7 +13,7 @@ const About = () => {
           </h2>
           <p className='py-1'>Add paragraph here</p>
           <h4 className='pt-4 animate-pulse'>Experience</h4>
-          <p className='py-1'>Add experience here==</p>
+          <p className='py-1'>Add experience here</p>
           <Link href='/#projects'>
             <p className='py-10 underline cursor-pointer'>
               Check out some of my projects...
@@ -25,8 +25,8 @@ const About = () => {
             className='hover:scale-105 ease-in duration-200 rounded-full'
             src={profile}
             alt='me'
-            width={400}
-            height={400}
+            width={500}
+            height={500}
           />
         </div>
       </div>

@@ -13,11 +13,11 @@ const Main = () => {
           </p>
           <h1 className='py-4 text-gray-700'>
             Aloha 🤙, I'm
-            <span className='text-teal-500'>Kurt aka @kmal808 🏝️</span>
+            <span className='text-teal-500'> Kurt </span>aka @kmal808 🏝️
           </h1>
           <div>
             <h2 className='py-2 text-gray-700'>
-              A Full stack software developer 💻
+              A Full Stack Software Developer 💻
             </h2>
             <p className='py-4 m-auto tracking-widest text-gray-500 uppercase'>
               Have a look around 👀
