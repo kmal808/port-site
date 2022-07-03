@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
-import logo from '/home/kurt/code/repos/port-site/public/assets/default.png'
+import Logo from '/home/kurt/code/repos/port-site/public/assets/default.png'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 const Nav = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
+  const [navBg, setNavBg] = useState('#ecf0f3')
+  const [linkColor, setLinkColor] = useState('#1f2937')
 
   const handleNav = () => {
     setNav(!nav)
@@ -26,9 +28,10 @@ const Nav = () => {
 
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100]'
+          ? 'fixed w-full h-20 shadow-xl shadow-teal-500 z-[100] ease-in-out duration-300'
           : 'fixed w-full h-20 z-[100]'
       }
     >
@@ -36,7 +39,7 @@ const Nav = () => {
         <Link href='/'>
           <a>
             <Image
-              src={logo}
+              src={Logo}
               alt='logo'
               width='100'
               height='100'
@@ -45,30 +48,38 @@ const Nav = () => {
           </a>
         </Link>
         <div>
-          <ul className='hidden md:flex'>
+          <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
             <Link href='/'>
-              <li className='ml-10 text-sm uppercase border-teal-200'>Home</li>
+              <li className='ml-10 text-sm uppercase border-teal-200 hover:border-b'>
+                Home
+              </li>
             </Link>
             <Link href='/#about'>
-              <li className='ml-10 text-sm uppercase border-teal-200'>About</li>
+              <li className='ml-10 text-sm uppercase border-teal-200 hover:border-b'>
+                About
+              </li>
             </Link>
             <Link href='/#skills'>
-              <li className='ml-10 text-sm uppercase border-teal-200'>
+              <li className='ml-10 text-sm uppercase border-teal-200 hover:border-b'>
                 Skills
               </li>
             </Link>
             <Link href='/#projects'>
-              <li className='ml-10 text-sm uppercase border-teal-200'>
+              <li className='ml-10 text-sm uppercase border-teal-200 hover:border-b'>
                 Projects
               </li>
             </Link>
             <Link href='/#contact'>
-              <li className='ml-10 text-sm uppercase border-teal-200'>
+              <li className='ml-10 text-sm uppercase border-teal-200 hover:border-b'>
                 Contact
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className='md:hidden'>
+          <div
+            style={{ color: `${linkColor}` }}
+            onClick={handleNav}
+            className='md:hidden'
+          >
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -89,16 +100,16 @@ const Nav = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
-                <Image src={logo} width='100' height='100' alt='logo' />
+                <Image src={Logo} width='100' height='100' alt='logo' />
               </Link>
               <div
                 onClick={handleNav}
-                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                className='p-2 duration-300 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-110'
               >
                 <AiOutlineClose />
               </div>
             </div>
-            <div className='border-b border-gray-300 my-4'>
+            <div className='border-b border-teal-200 my-4'>
               <p className='w-[85%] md:w-[90%] py-4'>
                 Let's build something sick together
               </p>
@@ -107,28 +118,43 @@ const Nav = () => {
           <div>
             <ul className='py-4 flex flex-col'>
               <Link href='/'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-sm border-teal-200 hover:border-b'
+                >
                   Home
                 </li>
               </Link>
               <Link href='/#about'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-sm border-teal-200 hover:border-b'
+                >
                   About
                 </li>
               </Link>
               <Link href='/#skills'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-sm border-teal-200 hover:border-b'
+                >
                   Skills
                 </li>
               </Link>
               <Link href='/#projects'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-sm border-teal-200 hover:border-b'
+                >
                   Projects
                 </li>
               </Link>
               <Link href='/#contact'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Contacct
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-sm border-teal-200 hover:border-b'
+                >
+                  Contact
                 </li>
               </Link>
             </ul>
@@ -137,16 +163,16 @@ const Nav = () => {
                 Let's Connect
               </p>
               <div className='flex items-center justify-between my-4  w-full sm:w-[80%]'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <div className='rounded-full shadow-lg shadow-teal-200 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <FaLinkedinIn />
                 </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <div className='rounded-full shadow-lg shadow-teal-200 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <FaGithub />
                 </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <div className='rounded-full shadow-lg shadow-teal-200 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <AiOutlineMail />
                 </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <div className='rounded-full shadow-lg shadow-teal-200 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <a href='https://twitter.com/kmal808'>
                     <FaTwitter />
                   </a>
