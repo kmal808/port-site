@@ -14,7 +14,7 @@ const Main = () => {
 					<h1 className='py-4 text-gray-700'>
 						Aloha 🤙, I&apos;m
 						<span className='text-teal-500'> Kurt </span>
-						<span className='text-sm'>aka @kmal808 🏝️</span>
+						<span className='text-gray-500 italic'>a.k.a. @kmal808 🏝️</span>
 					</h1>
 					<div>
 						<h2 className='py-2 text-gray-700'>
@@ -24,22 +24,22 @@ const Main = () => {
 							Have a look around 👀
 						</p>
 						<div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-							<div className='rounded-full shadow-lg shadow-teal-200 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+							<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
 								<a href='https://www.linkedin.com/in/kurt-malley/'>
 									<FaLinkedinIn />
 								</a>
 							</div>
-							<div className='rounded-full shadow-lg shadow-teal-200 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+							<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
 								<a href='https://github.com/kmal808'>
 									<FaGithub />
 								</a>
 							</div>
-							<div className='rounded-full shadow-lg shadow-teal-200 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+							<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
 								<a href='mailto:kurtmalleydev@gmail.com'>
 									<AiOutlineMail />
 								</a>
 							</div>
-							<div className='rounded-full shadow-lg shadow-teal-200 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+							<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
 								<a href='https://twitter.com/kmal808'>
 									<FaTwitter />
 								</a>

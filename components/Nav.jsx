@@ -31,8 +31,8 @@ const Nav = () => {
 			style={{ backgroundColor: `${navBg}` }}
 			className={
 				shadow
-					? 'fixed w-full h-20 shadow-xl shadow-teal-500 z-[100] ease-in-out duration-300'
-					: 'fixed w-full h-20 z-[100]'
+					? 'fixed w-full h-20 shadow-xl shadow-teal-200 z-[100] ease-in-out duration-300'
+					: 'fixed w-full h-20 z-[100] shadow-xl'
 			}
 		>
 			<div className='flex items-center justify-between w-full h-full px-10 2xl:px-16'>
@@ -163,16 +163,16 @@ const Nav = () => {
 								Let&apos;s Connect
 							</p>
 							<div className='flex items-center justify-between my-4  w-full sm:w-[80%]'>
-								<div className='rounded-full shadow-lg shadow-teal-200 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+								<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
 									<FaLinkedinIn />
 								</div>
-								<div className='rounded-full shadow-lg shadow-teal-200 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+								<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
 									<FaGithub />
 								</div>
-								<div className='rounded-full shadow-lg shadow-teal-200 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+								<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
 									<AiOutlineMail />
 								</div>
-								<div className='rounded-full shadow-lg shadow-teal-200 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+								<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
 									<a href='https://twitter.com/kmal808'>
 										<FaTwitter />
 									</a>
