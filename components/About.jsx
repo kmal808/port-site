@@ -18,7 +18,7 @@ const About = () => {
 						brought my passion, problem solving and collaborative skills to
 						field of software engineering.
 					</p>
-					<h4 className='py-4'>Where I'm At</h4>
+					<h4 className='py-4'>Where I&apos;m At</h4>
 					<p className='py-2 text-gray-600'>
 						🌎 Based on the island of Oahu, Hawaii
 					</p>
