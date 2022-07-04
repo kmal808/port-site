@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Profile from '/home/kurt/code/repos/port-site/public/assets/profile.jpg'
+import Profile from '../public/assets/profile.jpg'
 
 const About = () => {
 	return (

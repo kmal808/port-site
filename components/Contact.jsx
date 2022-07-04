@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import contactImg from '/home/kurt/code/repos/port-site/public/about-image.jpg'
+import contactImg from '../public/about-image.jpg'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'

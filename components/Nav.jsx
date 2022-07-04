@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
-import Logo from '/home/kurt/code/repos/port-site/public/assets/default.png'
+import Logo from '../public/assets/default.png'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 const Nav = () => {
