@@ -157,19 +157,19 @@ const Contact = () => {
 							</form>
 						</div>
 					</div>
+				</div>
 
-					<div className='flex justify-center py-12'>
-						<Link href='/'>
-							<a>
-								<div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-									<HiOutlineChevronDoubleUp
-										className='text-teal-600'
-										size={30}
-									/>
-								</div>
-							</a>
-						</Link>
-					</div>
+				<div className='flex justify-center py-12'>
+					<Link href='/'>
+						<a>
+							<div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+								<HiOutlineChevronDoubleUp
+									className='m-auto text-teal-600'
+									size={30}
+								/>
+							</div>
+						</a>
+					</Link>
 				</div>
 			</div>
 		</div>
