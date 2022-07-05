@@ -11,30 +11,31 @@ const About = () => {
 					<p className='uppercase text-xl tracking-widest text-teal-600'>
 						About
 					</p>
-					<h2 className='py-4'>The Four W&apos;s</h2>
+					<h2 className='py-4'>Who, Where, What, How</h2>
 					<h4 className='py-4'>Who I Am</h4>
 					<p className='py-2 text-gray-600'>
 						🏗️ Highly experienced construction operations manager that has
-						brought my passion, problem solving and collaborative skills to
+						brought my passion, problem solving and collaborative skills to the
 						field of software development.
 					</p>
 					<h4 className='py-4'>Where I&apos;m At</h4>
 					<p className='py-2 text-gray-600'>
-						🌎 Based on the island of Oahu, Hawaii
+						🌎 Located on the island of Oahu, Hawaii
 					</p>
 					<h4 className='py-4'>What I Do</h4>
 					<p className='py-2 text-gray-600'>
 						{/* //ToDo finish this section  */}
-						💪 My father instilled in me at a young age that hard work pays off,
-						and to never do a job halfa$$. Heeding that advise, I worked my way
-						from grunt laborer to managing operations for a 10m annual rev
-						residential construction company, increasing revenue by 100% during
-						my tenure.
+						💪 My father taught me at a young age two things that have molded
+						the person I am today. One is to get anywhere in life you have to
+						work hard. Two is to never do a job halfa$$. Heeding that advise, I
+						worked my way from grunt laborer to managing operations for a 10m
+						annual rev residential construction company, increasing revenue by
+						100% during my tenure.
 					</p>
 					<h4 className='py-4'>How I Do It</h4>
 					<p className='py-2 text-gray-600'>
 						{/* //ToDo finish this section  */}
-						🦺 Using that experience, work ethic, and dedication; I now deliver
+						🦺 Using that experience, work ethic, and dedication I now deliver
 						high quality responsive websites to clients, build and deploy full
 						stack web applications, and work on a development team creating
 						responsive web sites and applications for clients.

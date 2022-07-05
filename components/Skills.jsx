@@ -8,7 +8,7 @@ const Skills = () => {
 				<p className='text-xl tracking-widest text-teal-600 uppercase'>
 					Skills
 				</p>
-				<h2 className='py-4'>What I Can Do</h2>
+				<h2 className='py-4'>Tools In The Toolbox</h2>
 
 				<div className='grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 '>
 					<div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
