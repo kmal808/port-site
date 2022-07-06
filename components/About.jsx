@@ -11,7 +11,7 @@ const About = () => {
 					<p className='uppercase text-xl tracking-widest text-teal-600'>
 						About
 					</p>
-					<h2 className='py-4'>What&apos;s Up With Me</h2>
+					<h2 className='py-4'>Get To Know Me</h2>
 					{/* //ToDo decide on a sub heading */}
 					<h4 className='py-4'>Who I Am</h4>
 					<p className='py-2 text-gray-600'>
@@ -43,7 +43,7 @@ const About = () => {
 					</p>
 					<Link href='/#projects'>
 						<p className='py-5 text-gray-600 underline cursor-pointer'>
-							👀 Check out some of my latest projects.....
+							👀 See what I&apos;ve been working on.....
 						</p>
 					</Link>
 				</div>

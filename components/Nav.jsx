@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
-import Logo from '../public/assets/default.png'
+import Logo from '../public/assets/logo.png'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 const Nav = () => {
@@ -41,8 +41,8 @@ const Nav = () => {
 						<Image
 							src={Logo}
 							alt='logo'
-							width='100'
-							height='100'
+							width='125'
+							height='75'
 							className='cursor-pointer'
 						/>
 					</a>
