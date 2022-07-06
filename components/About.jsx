@@ -26,12 +26,12 @@ const About = () => {
 					<h4 className='py-4'>What I Do</h4>
 					<p className='py-2 text-gray-600'>
 						{/* //ToDo finish this section  */}
-						💪 My father taught me at a young age two things that have molded
-						the person I am today. One is in order to get anywhere in life you
-						have to work hard. Two is to never do a job halfa$$. Heeding that
-						advise, I worked my way from grunt laborer to managing operations
-						for a 10m annual rev residential construction company, increasing
-						revenue by 100% during my tenure.
+						💪 My father taught me two things at a young age that have molded
+						the person I am today. The first is in order to get anywhere in life
+						you have to work hard. The second is to never do a job halfa$$.
+						Heeding that advise, I worked my way from grunt laborer in the field
+						to managing operations for a 10m annual rev residential construction
+						company, increasing revenue by 100% during my tenure.
 					</p>
 					<h4 className='py-4'>How I Do It</h4>
 					<p className='py-2 text-gray-600'>
