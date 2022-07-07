@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import ThemeSwitch from './ThemeSwitch'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
-import Logo from '../public/assets/logo.png'
+import Logo from '../public/assets/default.png'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 const Nav = () => {
@@ -31,12 +32,13 @@ const Nav = () => {
 			style={{ backgroundColor: `${navBg}` }}
 			className={
 				shadow
-					? 'fixed w-full h-20 shadow-xl shadow-teal-200 z-[100] ease-in-out duration-300'
-					: 'fixed w-full h-20 z-[100] shadow-xl'
+					? 'fixed w-full h-20 shadow-lg shadow-teal-200 z-[100] ease-in-out duration-300 dark:bg-slate-800 text-gray-100'
+					: 'fixed w-full h-20 z-[100] shadow-xl dark:bg-slate-800 dark:text-gray-10'
 			}
 		>
 			<div className='flex items-center justify-between w-full h-full px-10 2xl:px-16'>
-				<Link href='/'>
+				<ThemeSwitch />
+				{/* <Link href='/'>
 					<a>
 						<Image
 							src={Logo}
@@ -46,31 +48,31 @@ const Nav = () => {
 							className='cursor-pointer'
 						/>
 					</a>
-				</Link>
+				</Link> */}
 				<div>
 					<ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
 						<Link href='/'>
-							<li className='ml-10 text-sm uppercase border-teal-200 hover:border-b'>
+							<li className='ml-10 text-sm uppercase border-teal-200 hover:border-b cursor-pointer'>
 								Home
 							</li>
 						</Link>
 						<Link href='/#about'>
-							<li className='ml-10 text-sm uppercase border-teal-200 hover:border-b'>
+							<li className='ml-10 text-sm uppercase border-teal-200 hover:border-b cursor-pointer'>
 								About
 							</li>
 						</Link>
 						<Link href='/#skills'>
-							<li className='ml-10 text-sm uppercase border-teal-200 hover:border-b'>
+							<li className='ml-10 text-sm uppercase border-teal-200 hover:border-b cursor-pointer'>
 								Skills
 							</li>
 						</Link>
 						<Link href='/#projects'>
-							<li className='ml-10 text-sm uppercase border-teal-200 hover:border-b'>
+							<li className='ml-10 text-sm uppercase border-teal-200 hover:border-b cursor-pointer'>
 								Projects
 							</li>
 						</Link>
 						<Link href='/#contact'>
-							<li className='ml-10 text-sm uppercase border-teal-200 hover:border-b'>
+							<li className='ml-10 text-sm uppercase border-teal-200 hover:border-b cursor-pointer'>
 								Contact
 							</li>
 						</Link>
@@ -120,7 +122,7 @@ const Nav = () => {
 							<Link href='/'>
 								<li
 									onClick={() => setNav(false)}
-									className='py-4 text-sm border-teal-200 hover:border-b'
+									className='py-4 text-sm border-teal-200 hover:border-b cursor-pointer'
 								>
 									Home
 								</li>
@@ -128,7 +130,7 @@ const Nav = () => {
 							<Link href='/#about'>
 								<li
 									onClick={() => setNav(false)}
-									className='py-4 text-sm border-teal-200 hover:border-b'
+									className='py-4 text-sm border-teal-200 hover:border-b cursor-pointer'
 								>
 									About
 								</li>
@@ -136,7 +138,7 @@ const Nav = () => {
 							<Link href='/#skills'>
 								<li
 									onClick={() => setNav(false)}
-									className='py-4 text-sm border-teal-200 hover:border-b'
+									className='py-4 text-sm border-teal-200 hover:border-b cursor-pointer'
 								>
 									Skills
 								</li>
@@ -144,7 +146,7 @@ const Nav = () => {
 							<Link href='/#projects'>
 								<li
 									onClick={() => setNav(false)}
-									className='py-4 text-sm border-teal-200 hover:border-b'
+									className='py-4 text-sm border-teal-200 hover:border-b cursor-pointer'
 								>
 									Projects
 								</li>
@@ -152,7 +154,7 @@ const Nav = () => {
 							<Link href='/#contact'>
 								<li
 									onClick={() => setNav(false)}
-									className='py-4 text-sm border-teal-200 hover:border-b'
+									className='py-4 text-sm border-teal-200 hover:border-b cursor-pointer'
 								>
 									Contact
 								</li>
