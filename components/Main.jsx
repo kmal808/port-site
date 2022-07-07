@@ -1,26 +1,27 @@
 import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa'
-import Link from 'next/link'
 
 const Main = () => {
 	return (
 		<div id='home' className='w-full h-screen text-center'>
 			<div className='max-w-[1240px] w-full h-full m-auto p-2 flex justify-center items-center'>
 				<div>
-					<p className='uppercase text-sm tracking-widest text-gray-600'>
+					<p className='uppercase text-sm tracking-widest text-gray-600 dark:text-white'>
 						LET&apos;S BUILD SOMETHING SICK TOGETHER
 					</p>
-					<h1 className='py-4 text-gray-700'>
+					<h1 className='py-4 text-gray-700 dark:text-white'>
 						Aloha 🤙, I&apos;m
 						<span className='text-teal-500'> Kurt </span>
-						<span className='text-gray-500 italic'>a.k.a. @kmal808 🏝️</span>
+						<span className='text-gray-500 italic dark:text-gray-200'>
+							a.k.a. @kmal808 🏝️
+						</span>
 					</h1>
 					<div>
-						<h2 className='py-2 text-gray-700'>
+						<h2 className='py-2 text-gray-700 dark:text-white'>
 							A Full Stack Software Developer 💻
 						</h2>
-						<p className='py-4 m-auto tracking-widest text-gray-500 uppercase'>
+						<p className='py-4 m-auto tracking-widest text-gray-500 uppercase dark:text-white'>
 							Have a look around 👀
 						</p>
 						<div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
