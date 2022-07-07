@@ -25,10 +25,10 @@ const Contact = () => {
 	return (
 		<div id='contact' className='w-full lg:h-screen'>
 			<div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
-				<p className='text-xl tracking-widest uppercase text-teal-600'>
+				<p className='text-xl font-bold tracking-widest uppercase text-teal-600'>
 					Contact
 				</p>
-				<h2 className='py-4'>Get In Touch</h2>
+				<h2 className='py-4 text-3xl sm:text-4xl'>Get In Touch</h2>
 				<div className='grid lg:grid-cols-5 gap-8'>
 					{/* left */}
 					<div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
@@ -43,7 +43,7 @@ const Contact = () => {
 								/>
 							</div>
 							<div>
-								<h2 className='py-2'>Kurt Malley</h2>
+								<h2 className='py-2 text-3xl sm:text-4xl'>Kurt Malley</h2>
 								<p>Full Snack Developer</p>
 								<p className='py-4'>
 									I&apos;m available for freelance or full-time positions.
@@ -151,7 +151,7 @@ const Contact = () => {
 										onChange={(e) => setMessage(e.target.value)}
 									></textarea>
 								</div>
-								<button className='w-full p-4 text-gray-100 mt-4'>
+								<button className='w-full p-4 text-gray-100 mt-4 shadow-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-teal-300 to-teal-600'>
 									Send Message
 								</button>
 							</form>

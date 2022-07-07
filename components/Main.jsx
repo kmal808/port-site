@@ -7,21 +7,21 @@ const Main = () => {
 		<div id='home' className='w-full h-screen text-center'>
 			<div className='max-w-[1240px] w-full h-full m-auto p-2 flex justify-center items-center'>
 				<div>
-					<p className='uppercase text-sm tracking-widest text-gray-600 dark:text-white'>
+					<p className='uppercase text-sm tracking-widest text-gray-600 dark:text-gray-400'>
 						LET&apos;S BUILD SOMETHING SICK TOGETHER
 					</p>
-					<h1 className='py-4 text-gray-700 dark:text-white'>
+					<h1 className='py-4 text-gray-700 text-4xl sm:text-5xl md:text-6xl font-bold dark:text-slate-300'>
 						Aloha 🤙, I&apos;m
 						<span className='text-teal-500'> Kurt </span>
-						<span className='text-gray-500 italic dark:text-gray-200'>
+						<span className='text-gray-500 dark:text-gray-400 italic'>
 							a.k.a. @kmal808 🏝️
 						</span>
 					</h1>
 					<div>
-						<h2 className='py-2 text-gray-700 dark:text-white'>
+						<h2 className='py-2 text-gray-700 text-3xl sm:text-4xl font-bold dark:text-slate-300'>
 							A Full Stack Software Developer 💻
 						</h2>
-						<p className='py-4 m-auto tracking-widest text-gray-500 uppercase dark:text-white'>
+						<p className='py-4 m-auto tracking-widest text-gray-500 uppercase dark:text-slate-300'>
 							Have a look around 👀
 						</p>
 						<div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
