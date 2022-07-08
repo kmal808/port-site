@@ -9,8 +9,8 @@ import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 const Nav = () => {
 	const [nav, setNav] = useState(false)
 	const [shadow, setShadow] = useState(false)
-	const [navBg, setNavBg] = useState('#ecf0f3')
-	const [linkColor, setLinkColor] = useState('#1f2937')
+	// const [navBg, setNavBg] = useState('#ecf0f3')
+	// const [linkColor, setLinkColor] = useState('#1f2937')
 
 	const handleNav = () => {
 		setNav(!nav)
@@ -29,11 +29,11 @@ const Nav = () => {
 
 	return (
 		<div
-			style={{ backgroundColor: `${navBg}` }}
+			// style={{ backgroundColor: `${navBg}` }}
 			className={
 				shadow
-					? 'fixed w-full h-20 shadow-lg shadow-teal-200 z-[100] ease-in-out duration-300 dark:bg-slate-800 text-gray-100'
-					: 'fixed w-full h-20 z-[100] shadow-xl dark:bg-slate-800 dark:text-gray-10'
+					? 'fixed w-full h-20 bg-[#ecf0f3] dark:bg-slate-600 shadow-lg shadow-teal-200 z-[100] ease-in-out duration-300'
+					: 'fixed w-full h-20 bg-[#ecf0f3] z-[100] dark:bg-slate-600 shadow-xl'
 			}
 		>
 			<div className='flex items-center justify-between w-full h-full px-10 2xl:px-16'>
@@ -50,7 +50,9 @@ const Nav = () => {
 					</a>
 				</Link> */}
 				<div>
-					<ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+					<ul
+						/** style={{ color: `${linkColor}` }}  */ className='hidden md:flex dark:text-slate-200'
+					>
 						<Link href='/'>
 							<li className='ml-10 text-sm uppercase border-teal-200 hover:border-b cursor-pointer'>
 								Home
@@ -78,9 +80,9 @@ const Nav = () => {
 						</Link>
 					</ul>
 					<div
-						style={{ color: `${linkColor}` }}
+						/** style={{ color: `${linkColor}` }} */
 						onClick={handleNav}
-						className='md:hidden'
+						className='md:hidden dark:text-slate-200'
 					>
 						<AiOutlineMenu size={25} />
 					</div>
@@ -95,18 +97,16 @@ const Nav = () => {
 				<div
 					className={
 						nav
-							? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+							? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:[45%] h-screen bg-[#ecf0f3] dark:bg-slate-700 p-10 ease-in duration-500'
 							: 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
 					}
 				>
 					<div>
 						<div className='flex w-full items-center justify-between'>
-							<Link href='/'>
-								<Image src={Logo} width='100' height='100' alt='logo' />
-							</Link>
+							<ThemeSwitch />
 							<div
 								onClick={handleNav}
-								className='p-2 duration-300 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-110'
+								className='p-2 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110'
 							>
 								<AiOutlineClose />
 							</div>
