@@ -16,7 +16,7 @@ const banki = () => {
 					src={bankiImage}
 					alt='/'
 				/>
-				<div className='absolute top-[80%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
+				<div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
 					<h2 className='py-2 text-2xl sm:text-3xl font-bold'>The Bank</h2>
 					<h3 className='font-bold'>
 						HTML / CSS / JavaScript / NodeJS / Express

@@ -32,8 +32,8 @@ const Nav = () => {
 			// style={{ backgroundColor: `${navBg}` }}
 			className={
 				shadow
-					? 'fixed w-full h-20 bg-[#ecf0f3] dark:bg-slate-600 shadow-lg shadow-teal-200 z-[100] ease-in-out duration-300'
-					: 'fixed w-full h-20 bg-[#ecf0f3] z-[100] dark:bg-slate-600 shadow-xl'
+					? 'fixed w-full h-20 bg-[#e4e8eb] dark:bg-slate-600 shadow-lg shadow-teal-200 z-[100] ease-in-out duration-300'
+					: 'fixed w-full h-20 bg-[#e4e8eb] z-[100] dark:bg-slate-600 shadow-xl'
 			}
 		>
 			<div className='flex items-center justify-between w-full h-full px-10 2xl:px-16'>
