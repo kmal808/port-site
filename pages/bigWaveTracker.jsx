@@ -32,8 +32,8 @@ const bigWaveTracker = () => {
 					</h2>
 					<p>
 						This website is a SPA mock up of an AI Surf Reporting mobile app
-						download site. "Use AI to never miss the next big swell". Built
-						using HTML and CSS.
+						download site. &quote;Use AI to never miss the next big
+						swell&quote;. Built using HTML and CSS.
 					</p>
 					<a
 						href='https://bigwavetracker.kurtmalley.com'
