@@ -14,7 +14,7 @@ export default function Home() {
 					name='description'
 					content="I'm a full stack developer specializing in building exceptional digital experiences"
 				/>
-				<link rel='icon' href='/favicon.ico' />
+				<link rel='icon' href='/fav.png' />
 			</Head>
 			<Main />
 			<About />

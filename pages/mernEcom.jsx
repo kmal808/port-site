@@ -44,7 +44,7 @@ const mernEcom = () => {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<button className='px-8 py-2 mt-4 ml-4 shadow-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-teal-400 to-teal-700 text-white'>
+						<button className='px-8 py-2 mt-4 shadow-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-teal-400 to-teal-700 text-white'>
 							Demo
 						</button>
 					</a>
