@@ -12,7 +12,7 @@ export default function Home() {
 				<title>Kurt Malley | Full Stack Developer</title>
 				<meta
 					name='description'
-					content="I'm a full stack developer specializing in building exceptional digital experiences"
+					content='Full stack software developer building exceptional digital experiences'
 				/>
 				<link rel='icon' href='/fav.png' />
 			</Head>
